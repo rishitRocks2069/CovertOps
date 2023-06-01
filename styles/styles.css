@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body, main {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-family: "Clash Display", Impact;
+}
+
+.btn {
+  background-image: linear-gradient(to right, #C3073F, #dc0847);
+  background-size: 300%;
+  background-position-x: 0;
+  background-position-y: 0;
+  color: #1A1A1D;
+  border-radius: 10px;
+  padding: 1rem;
+  text-decoration: none;
+  transition: background-position 500ms;
+  border: 0;
+  font: inherit;
+}
+.btn:hover {
+  background-position-x: 100%;
+  background-position-y: 100%;
+}
+
+input:where([type=text], [type=password]) {
+  outline: 2px solid #C3073F;
+  font: inherit;
+  border-radius: 10px;
+  color: #fafafa;
+  padding: 0.5rem;
+  border: 0;
+  background-color: #1A1A1D;
+  transition: background-color 200ms;
+}
+input:where([type=text], [type=password])::-moz-placeholder {
+  color: #fafafa;
+}
+input:where([type=text], [type=password])::placeholder {
+  color: #fafafa;
+}
+input:where([type=text], [type=password]):focus {
+  background-color: #323238;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  color: #fafafa;
+  border-radius: 10px;
+  padding-inline: 1rem;
+  padding-block: 0.1rem;
+}
+nav h1 {
+  flex-grow: 1;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+}
+nav ul li .nav-link {
+  color: #fafafa;
+  text-decoration: none;
+  position: relative;
+}
+nav ul li .nav-link:hover::after {
+  transform: scaleX(0.8);
+}
+nav ul li .nav-link::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  border-radius: 100vmax;
+  width: 100%;
+  background-color: #950740;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transition: transform 200ms;
+  transform-origin: left;
+}
+nav ul li button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  padding: 0;
+}
+nav ul li .nav-btn {
+  background-color: #C3073F;
+  color: #fafafa;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: background-color 200ms;
+}
+nav ul li .nav-btn:hover {
+  background-color: #dc0847;
+}
+
+body {
+  background-color: #1A1A1D;
+  color: #fafafa;
+  background-color: #1A1A1D;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-rows: 85.6px 1fr;
+}
+
+main {
+  padding: 1rem;
+}
+
+main {
+  font-family: "Clash Display";
+  padding-top: 2rem;
+  display: grid;
+  place-items: center;
+}
+main .img-container {
+  border-radius: 10px;
+  height: 250px;
+  aspect-ratio: 1;
+  margin-bottom: 1rem;
+  position: absolute;
+  left: calc(50% - 125px);
+  top: 8rem;
+  animation: rise 1000ms ease-out;
+  z-index: -1;
+  display: grid;
+  place-items: center;
+}
+main .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    top: 250px;
+  }
+  to {
+    opacity: 1;
+    top: 8rem;
+  }
+}
+main .text {
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+main .text h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+main .text h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}/*# sourceMappingURL=styles.css.map */

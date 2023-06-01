@@ -1,0 +1,71 @@
+@use 'colors' as *;
+
+nav{
+    display: flex;
+    align-items: center;
+    color: $white;
+    border-radius: 10px;
+    padding-inline: 1rem;
+    padding-block: 0.1rem;
+    h1{
+        flex-grow: 1;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        align-items: center;
+        li{
+            .nav-link{
+                color: $white;
+                text-decoration: none;
+                position: relative;
+                &:hover::after{
+                    transform: scaleX(.8);
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    height: 2px;
+                    border-radius: 100vmax;
+                    width: 100%;
+                    background-color: $plum;
+                    bottom: -.5rem;
+                    left: 0;
+                    right: 0;
+                    transform: scaleX(0);
+                    transition: transform 200ms;
+                    transform-origin: left;
+                }
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                font-size: 1rem;
+                padding: 0;
+            }
+            .nav-btn{
+                background-color: $red;
+                color: $white;
+                border-radius: 10px;
+                padding: 1rem;
+                transition: background-color 200ms;
+                &:hover{
+                    background-color: lighten($red, 5%);
+                }
+            }
+        }
+    }
+}
+
+body{
+    background-color: $black;
+    color: $white;
+    background-color: $black;
+    padding: .5rem;
+    display: grid;
+    grid-template-rows: 85.6px 1fr;
+}
+main{
+    padding: 1rem;
+}

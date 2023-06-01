@@ -1,0 +1,56 @@
+@use 'colors' as *;
+@use 'components';
+@use 'reset';
+@use 'base'; 
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .btn{
+        border-radius: 100vmax;
+        height: 2rem;
+        width: 2rem;
+        aspect-ratio: 1;
+        padding: 0.5rem;
+        margin-right:33rem
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        li{
+            position: relative;
+            padding: 1rem;
+            transition: background-color 200ms;
+            display: flex;
+            align-items: center;
+            &::after{
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                right: 0;
+                width: 100%;
+                content: '';
+                background:#D1D5DB;
+                border-radius: 100vmax;
+                height: 1px;
+            }
+            &:hover{
+                background-color: rgb($white, 0.2);
+            }
+            a{
+                flex-grow: 1;
+                margin-right: 20rem;
+                color: $red;
+                text-decoration: none;
+            }
+            .status{
+                background-color: $plum;
+                padding: .4rem;
+                border-radius: 100vmax;
+            }
+        }
+    }
+}
