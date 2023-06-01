@@ -1,0 +1,62 @@
+@use 'colors' as *;
+@use 'components';
+@use 'reset';
+@use 'base'; 
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    dialog{
+        background-color: $plum;
+        border-radius: 10px;
+        padding: 2rem 3rem;
+        border: 5px solid $black;
+        h1{
+            margin-top: 0;
+            font-family: 'Nunito',sans-serif;
+            color: $black;
+        }
+        &::backdrop{
+            background-color: $white;
+            opacity: .2;
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        min-width: 50rem;
+        li{
+            position: relative;
+            padding: 1rem;
+            transition: background-color 200ms;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &::after{
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                right: 0;
+                width: 100%;
+                content: '';
+                background:#D1D5DB;
+                border-radius: 100vmax;
+                height: 1px;
+            }
+            p{
+                flex-grow: 1;
+            }
+            &:hover{
+                background-color: rgb($white, 0.2);
+            }
+            .status{
+                background-color: $plum;
+                padding: .4rem;
+                border-radius: 100vmax;
+            }
+        }
+    }
+}

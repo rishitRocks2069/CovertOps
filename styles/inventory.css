@@ -119,51 +119,59 @@ main {
 }
 
 main {
-  font-family: "Clash Display";
-  padding-top: 2rem;
-  display: grid;
-  place-items: center;
-}
-main .img-container {
-  border-radius: 10px;
-  height: 250px;
-  aspect-ratio: 1;
-  margin-bottom: 1rem;
-  position: absolute;
-  left: calc(50% - 125px);
-  top: 8rem;
-  animation: rise 1000ms ease-out;
-  z-index: -1;
-  display: grid;
-  place-items: center;
-}
-main .img-container img {
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-}
-@keyframes rise {
-  from {
-    opacity: 0;
-    top: 250px;
-  }
-  to {
-    opacity: 1;
-    top: 8rem;
-  }
-}
-main .text {
-  margin-top: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.1rem;
 }
-main .text h1 {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
+main dialog {
+  background-color: #950740;
+  border-radius: 10px;
+  padding: 2rem 3rem;
+  border: 5px solid #1A1A1D;
 }
-main .text h2 {
-  font-size: 2.5rem;
+main dialog h1 {
   margin-top: 0;
-}/*# sourceMappingURL=styles.css.map */
+  font-family: "Nunito", sans-serif;
+  color: #1A1A1D;
+}
+main dialog::backdrop {
+  background-color: #fafafa;
+  opacity: 0.2;
+}
+main ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  min-width: 50rem;
+}
+main ul li {
+  position: relative;
+  padding: 1rem;
+  transition: background-color 200ms;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main ul li::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  content: "";
+  background: #D1D5DB;
+  border-radius: 100vmax;
+  height: 1px;
+}
+main ul li p {
+  flex-grow: 1;
+}
+main ul li:hover {
+  background-color: rgba(250, 250, 250, 0.2);
+}
+main ul li .status {
+  background-color: #950740;
+  padding: 0.4rem;
+  border-radius: 100vmax;
+}/*# sourceMappingURL=inventory.css.map */
