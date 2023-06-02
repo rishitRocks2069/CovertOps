@@ -41,18 +41,6 @@
                 <div class="status"><small>200kg</small></div>
                 <button class="btn" id="showDialog1">Update</button>
             </li>
-            <dialog id="Dialog2">
-                <h1>Update</h1>
-                <form>
-                  <p>
-                    <input type="text" placeholder="New Qauntity">
-                  </p>
-                  <div>
-                    <button value="cancel" formmethod="dialog" class="btn">Cancel</button>
-                    <button id="confirmBtn" value="default" class="btn">Confirm</button>
-                  </div>
-                </form>
-                </dialog>
             <li>
                 <p>Heroin</p>
                 <div class="status"><small>50kg</small></div>
@@ -70,11 +58,19 @@
     <script>
         //1
         const showButton1 = document.getElementById('showDialog1');
+        const showButton2= document.getElementById('showDialog2');
+        const showButton3 = document.getElementById('showDialog3');
 const Dialog1 = document.getElementById('Dialog1');
 const inputEl1 = Dialog1.querySelector('input');
 const confirmBtn1 = Dialog1.querySelector('#confirmBtn');
 
 showButton1.addEventListener('click', () => {
+  Dialog1.showModal();
+});
+showButton2.addEventListener('click', () => {
+  Dialog1.showModal();
+});
+showButton3.addEventListener('click', () => {
   Dialog1.showModal();
 });
 
