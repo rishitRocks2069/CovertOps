@@ -45,6 +45,11 @@ input:where([type=text], [type=password]):focus {
   background-color: #323238;
 }
 
+input[type=checkbox] {
+  accent-color: #950740;
+  border: 0;
+}
+
 button {
   cursor: pointer;
 }

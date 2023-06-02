@@ -34,3 +34,8 @@ input:where([type = 'text'], [type = 'password']){
         background-color: lighten($black, 10%);
     }
 }
+
+input[type='checkbox']{
+    accent-color: $plum;
+    border: 0;
+}
