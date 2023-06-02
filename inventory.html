@@ -15,9 +15,10 @@
         <h1>Logo</h1>
         <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">Assignments</a></li>
-            <li><a href="#" class="nav-link">Inventory</a></li>
-            <li><button href="#" class="btn">Logout</button></li>
+            <li><a href="assignments.html" class="nav-link">Assignments</a></li>
+            <li><a href="inventory.html" class="nav-link">Inventory</a></li>
+            <li><a href="sign_up.html" class="nav-link">Sign new users</a></li>
+            <li><button class="btn">Logout</button></li>
         </ul>
     </nav>
 
@@ -89,30 +90,6 @@ confirmBtn1.addEventListener('click', (event) => {
   event.preventDefault();
   Dialog1.close(inputEl1.value); 
 });
-
-//2
-const showButton2 = document.getElementById('showDialog2');
-const Dialog2 = document.getElementById('Dialog2');
-const inputEl2 = Dialog2.querySelector('input');
-const confirmBtn2 = Dialog2.querySelector('#confirmBtn');
-
-showButton1.addEventListener('click', () => {
-  Dialog1.showModal();
-});
-
-inputEl1.addEventListener('change', (e) => {
-  confirmBtn1.value = inputEl1.value;
-});
-
-Dialog1.addEventListener('close', (e) => {
-  outputBox.value = Dialog1.returnValue === 'default' ? "No return value." : `ReturnValue: ${Dialog1.returnValue}.`;
-});
-
-confirmBtn1.addEventListener('click', (event) => {
-  event.preventDefault();
-  Dialog1.close(inputEl1.value); 
-});
-
     </script>
 </body>
 </html>
