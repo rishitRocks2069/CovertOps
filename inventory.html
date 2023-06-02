@@ -40,34 +40,11 @@
                 <div class="status"><small>200kg</small></div>
                 <button class="btn" id="showDialog1">Update</button>
             </li>
-            <dialog id="Dialog2">
-                <h1>Update</h1>
-                <form>
-                  <p>
-                    <input type="text" placeholder="New Qauntity">
-                  </p>
-                  <div>
-                    <button value="cancel" formmethod="dialog" class="btn">Cancel</button>
-                    <button id="confirmBtn" value="default" class="btn">Confirm</button>
-                  </div>
-                </form>
-                </dialog>
-            <li>
-                <p>Heroin</p>
-                <div class="status"><small>50kg</small></div>
-                <button class="btn" id="showDialog2">Update</button>
-            </li>
-            <li>
-                <p>Sell drugs to don hulk</p>
-                <div class="status"><small>10kg</small></div>
-                <button class="btn" id="showDialog3">Update</button>
-            </li>
         </ul>
     </main>
 
 
     <script>
-        //1
         const showButton1 = document.getElementById('showDialog1');
 const Dialog1 = document.getElementById('Dialog1');
 const inputEl1 = Dialog1.querySelector('input');
@@ -89,30 +66,6 @@ confirmBtn1.addEventListener('click', (event) => {
   event.preventDefault();
   Dialog1.close(inputEl1.value); 
 });
-
-//2
-const showButton2 = document.getElementById('showDialog2');
-const Dialog2 = document.getElementById('Dialog2');
-const inputEl2 = Dialog2.querySelector('input');
-const confirmBtn2 = Dialog2.querySelector('#confirmBtn');
-
-showButton1.addEventListener('click', () => {
-  Dialog1.showModal();
-});
-
-inputEl1.addEventListener('change', (e) => {
-  confirmBtn1.value = inputEl1.value;
-});
-
-Dialog1.addEventListener('close', (e) => {
-  outputBox.value = Dialog1.returnValue === 'default' ? "No return value." : `ReturnValue: ${Dialog1.returnValue}.`;
-});
-
-confirmBtn1.addEventListener('click', (event) => {
-  event.preventDefault();
-  Dialog1.close(inputEl1.value); 
-});
-
     </script>
 </body>
 </html>
