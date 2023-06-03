@@ -134,9 +134,12 @@ main dialog h1 {
   font-family: "Nunito", sans-serif;
   color: #1A1A1D;
 }
+main dialog form {
+  display: flex;
+}
 main dialog::backdrop {
-  background-color: #fafafa;
-  opacity: 0.2;
+  background-color: #1b1212;
+  opacity: 0.3;
 }
 main ul {
   display: flex;
