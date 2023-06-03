@@ -166,7 +166,7 @@ main ul li::after {
   height: 1px;
 }
 main ul li:hover {
-  background-color: rgba(250, 250, 250, 0.2);
+  background-color: rgba(250, 250, 250, 0.15);
 }
 main ul li a {
   flex-grow: 1;
