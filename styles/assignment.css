@@ -45,6 +45,11 @@ input:where([type=text], [type=password]):focus {
   background-color: #323238;
 }
 
+input[type=checkbox] {
+  accent-color: #950740;
+  border: 0;
+}
+
 button {
   cursor: pointer;
 }
@@ -166,7 +171,7 @@ main .container .chat .chat-container {
   flex-grow: 1;
   overflow-y: scroll;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 main .container .chat .chat-container .message p {
   margin: 0.1rem;

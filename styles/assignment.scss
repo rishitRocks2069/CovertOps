@@ -52,7 +52,7 @@ main{
                 flex-grow: 1;
                 overflow-y: scroll;
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 .message{
                     p{
                         margin: .1rem;

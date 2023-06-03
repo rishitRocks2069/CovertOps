@@ -45,6 +45,11 @@ input:where([type=text], [type=password]):focus {
   background-color: #323238;
 }
 
+input[type=checkbox] {
+  accent-color: #950740;
+  border: 0;
+}
+
 button {
   cursor: pointer;
 }
@@ -123,7 +128,12 @@ main {
   flex-direction: column;
   align-items: center;
 }
-main .btn {
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main a.btn {
   border-radius: 100vmax;
   height: 2rem;
   width: 2rem;
@@ -156,7 +166,7 @@ main ul li::after {
   height: 1px;
 }
 main ul li:hover {
-  background-color: rgba(250, 250, 250, 0.2);
+  background-color: rgba(250, 250, 250, 0.15);
 }
 main ul li a {
   flex-grow: 1;

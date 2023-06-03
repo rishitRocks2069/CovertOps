@@ -7,7 +7,12 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    .btn{
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a.btn{
         border-radius: 100vmax;
         height: 2rem;
         width: 2rem;
@@ -38,7 +43,7 @@ main{
                 height: 1px;
             }
             &:hover{
-                background-color: rgb($white, 0.2);
+                background-color: rgb($white, 0.15);
             }
             a{
                 flex-grow: 1;

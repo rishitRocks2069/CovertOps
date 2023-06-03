@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/assignments.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <title>CovertOps|Assignments</title>
+    <title>CovertOps | Create Assignment</title>
 </head>
 <body>
     <nav>
@@ -23,12 +23,16 @@
     </nav>
 
     <main>
-        <a href="create_assignment.html" class="btn"><ion-icon name="add-outline" size="large"></ion-icon></a>
-        <ul class="assignments">
-            <li> <a href="assignment.html">Kill Competitior</a><div class="status"><small>Completed</small></div></li>
-            <li> <a href="assignment.html">Take Revenge on police</a><div class="status"><small>In Progress</small></div></li>
-            <li> <a href="assignment.html">Sell drugs to don hulk</a><div class="status"><small>Planning</small></div></li>
-        </ul>
+        <h1>Create Assignment</h1>
+        <form action="">
+            <input type="text" placeholder="Assignment name">
+            <ul class="assignments">
+                <li><input type="checkbox"><a href="assignment.html">Killem</a><div class="status"><small>Hitman</small></div></li>
+                <li><input type="checkbox"><a href="assignment.html">Diamond</a><div class="status"><small>Logistics Manager</small></div></li>
+                <li><input type="checkbox"><a href="assignment.html">Stellar</a><div class="status"><small>Miscellaneous</small></div></li>
+            </ul>
+            <button class="btn" type="submit">Create</button>
+        </form>
     </main>
 
 </body>

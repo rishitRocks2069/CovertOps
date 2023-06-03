@@ -15,9 +15,10 @@
         <h1>Logo</h1>
         <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">Assignments</a></li>
-            <li><a href="#" class="nav-link">Inventory</a></li>
-            <li><button href="#" class="btn">Logout</button></li>
+            <li><a href="assignments.html" class="nav-link">Assignments</a></li>
+            <li><a href="inventory.html" class="nav-link">Inventory</a></li>
+            <li><a href="sign_up.html" class="nav-link">Sign new users</a></li>
+            <li><button class="btn">Logout</button></li>
         </ul>
     </nav>
 
@@ -38,17 +39,35 @@
                 <div class="status"><small>200kg</small></div>
                 <button class="btn" id="showDialog1">Update</button>
             </li>
+            <li>
+                <p>Heroin</p>
+                <div class="status"><small>50kg</small></div>
+                <button class="btn" id="showDialog2">Update</button>
+            </li>
+            <li>
+                <p>Sell drugs to don hulk</p>
+                <div class="status"><small>10kg</small></div>
+                <button class="btn" id="showDialog3">Update</button>
+            </li>
         </ul>
     </main>
 
 
     <script>
         const showButton1 = document.getElementById('showDialog1');
+        const showButton2= document.getElementById('showDialog2');
+        const showButton3 = document.getElementById('showDialog3');
 const Dialog1 = document.getElementById('Dialog1');
 const inputEl1 = Dialog1.querySelector('input');
 const confirmBtn1 = Dialog1.querySelector('#confirmBtn');
 
 showButton1.addEventListener('click', () => {
+  Dialog1.showModal();
+});
+showButton2.addEventListener('click', () => {
+  Dialog1.showModal();
+});
+showButton3.addEventListener('click', () => {
   Dialog1.showModal();
 });
 
