@@ -19,10 +19,12 @@ main{
         }
         form{
             display: flex;
+            flex-direction: column;
+            gap: .5rem;
         }
         &::backdrop{
-            background-color: #1b1212;
-            opacity: .3;
+            background-color: $white;
+            opacity: .2;
         }
     }
     ul{
